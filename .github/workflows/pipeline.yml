@@ -25,3 +25,7 @@ jobs:
       run: npm run start &
     - name: Run unit tests  
       run: npm run test:unit
+    - name: Install Playwright browsers
+      run: npx playwright install  
+    - name: Execute playwright tests
+      run: npm run test:ui
